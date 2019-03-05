@@ -31,7 +31,7 @@ THE SOFTWARE.
 	<f:entry title="${it.name}" description="${it.formattedDescription}">
 		<div name="parameter" description="${it.formattedDescription}">
 			<input type="hidden" name="name" value="${it.name}" />
-			<f:textbox name="value" value="${it.defaultValue}" 
+			<f:textbox name="value" value="${it.defaultValue}"  style="width:200px"
 				checkUrl="'descriptorByName/hudson.plugins.validating_string_parameter.ValidatingStringParameterDefinition/validate?regex='+encodeURIComponent(&quot;${it.jsEncodedRegex}&quot;)+'&amp;failedValidationMessage='+encodeURIComponent(&quot;${it.jsEncodedFailedValidationMessage}&quot;)+'&amp;value='+encodeURIComponent(this.value)"/>
 		</div>
 	</f:entry>
